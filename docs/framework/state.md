@@ -71,10 +71,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   useEffect(() => {
-    // Check for existing session
-    authService.getCurrentUser()
-      .then(setUser)
-      .finally(() => setLoading(false));
+    const loadUser = async () => {
+      try {
+        const user = await authService.getCurrentUser();
+        setUser(user);
+      } catch (error) {
+        console.error('Failed to load user:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    loadUser();
   }, []);
 
   return (

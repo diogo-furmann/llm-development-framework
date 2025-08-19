@@ -56,10 +56,15 @@ REACT_APP_ENV=development
 - Verify error handling
 - Check responsive design with browser dev tools
 
-### 4. Review Phase
-- Self-review code changes
-- Run type checker and linter
-- Update documentation
+### 4. Validation Phase
+- **TypeScript validation**: Run `npx tsc --noEmit` iteratively until zero errors
+- **Code formatting**: Run `npm run format` for consistent styling
+- **Self-review**: Check code changes for completeness
+
+### 5. Documentation Phase
+- Create concise, essential documentation only
+- Focus on architecture decisions and usage patterns
+- **Never document testing or create test-related content**
 
 ## Common Tasks
 

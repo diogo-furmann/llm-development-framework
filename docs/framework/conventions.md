@@ -69,8 +69,9 @@ const handleSubmit = (data: FormData): Promise<void> => {
 };
 
 // Use function declarations for hoisted utilities
-function formatDate(date: Date): string {
-  // Implementation
+function formatDate(date: Date | string | dayjs.Dayjs): string {
+  // Use dayjs for date formatting in pt-BR format - see code-snippets.md
+  return dayjs(date).tz('America/Sao_Paulo').format('DD/MM/YYYY');
 }
 ```
 
