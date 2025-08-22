@@ -2,53 +2,45 @@
 
 This folder contains all documentation for the React development project and LLM-guided development framework.
 
-## 📁 Documentation Structure
+## 📁 Documentation Structure (Context-Optimized)
 
-### [`framework/`](./framework/)
-**LLM Development Framework** - The core documentation that guides Claude AI in implementing features consistently.
+### [`core/`](./framework/framework/core/) 
+**Essential Framework** - High-priority, minimal context for maximum AI efficiency.
 
-- [`architecture.md`](./framework/architecture.md) - System layers, data flow, and design patterns
-- [`components.md`](./framework/components.md) - Ant Design component usage and patterns
-- [`state.md`](./framework/state.md) - State management patterns and hooks
-- [`api.md`](./framework/api.md) - Backend integration and data structures
-- [`routing.md`](./framework/routing.md) - Navigation structure and route patterns
-- [`conventions.md`](./framework/conventions.md) - Naming, TypeScript, and code organization
-- [`workflows.md`](./framework/workflows.md) - Development processes and common tasks
-- [`feature-template.md`](./framework/feature-template.md) - Step-by-step feature implementation guide
-- [`decision-trees.md`](./framework/decision-trees.md) - Decision trees for eliminating choice paralysis
-- [`code-snippets.md`](./framework/code-snippets.md) - Ready-to-use code patterns and templates
-- [`implementation-guide.md`](./framework/implementation-guide.md) - How to document implementations
-- [`ai-context-optimization.md`](./framework/ai-context-optimization.md) - AI context optimization for better LLM performance
+- [`quick-reference.md`](./framework/core/quick-reference.md) - ⭐ **START HERE** - All essential patterns in one place
+- [`architecture.md`](./framework/core/architecture.md) - System layers, data flow, and design patterns  
+- [`patterns.md`](./framework/core/patterns.md) - Component, state, and service implementation patterns
+- [`conventions.md`](./framework/core/conventions.md) - Naming, TypeScript, and code organization
 
-### [`implementations/`](./implementations/)
-**Implementation Documentation** - Detailed docs of everything that has been built.
+### [`tools/`](./framework/tools/)
+**Implementation Support** - Templates, decision support, and optimization guides.
 
-- [`features/`](./implementations/features/) - Feature-level implementation documentation
-- [`components/`](./implementations/components/) - Individual component documentation
-- [`services/`](./implementations/services/) - API service implementation docs
-- [`hooks/`](./implementations/hooks/) - Custom hooks documentation
+- [`ai-context-optimization.md`](./framework/tools/ai-context-optimization.md) - AI context optimization for better LLM performance
+- [`decision-trees.md`](./framework/tools/decision-trees.md) - Decision trees for eliminating choice paralysis  
+- [`code-snippets.md`](./framework/tools/code-snippets.md) - Ready-to-use code patterns and templates
+- [`feature-template.md`](./framework/tools/feature-template.md) - Step-by-step feature implementation guide
 
-### [`adrs/`](./adrs/)
-**Architecture Decision Records** - Important architectural decisions and constraints.
+### [`project/`](./project/)
+**Implementation Documentation** - High level docs of everything that has been built.
 
-- [`adr-template.md`](./adrs/adr-template.md) - Template and examples for ADRs
+## 🚀 Quick Start for Claude AI (Context-Optimized)
 
-## 🚀 Quick Start for Claude AI
+### ⚡ Ultra-Fast Workflow:
+1. **Start with** [`core/quick-reference.md`](./framework/core/quick-reference.md) - Everything you need in one file
+2. **Use tools as needed**:
+   - [`tools/decision-trees.md`](./framework/tools/decision-trees.md) for quick decisions
+   - [`tools/code-snippets.md`](./framework/tools/code-snippets.md) for ready-to-use patterns
+   - [`tools/ai-context-optimization.md`](./framework/tools/ai-context-optimization.md) for context efficiency
 
-### Efficient Implementation Workflow:
-1. **Start with** [`../CLAUDE.md`](../CLAUDE.md) - Main entry point with checklists
-2. **Optimize context** - Read [`ai-context-optimization.md`](./framework/ai-context-optimization.md) for better LLM performance
-3. **Check decision trees** - Use [`decision-trees.md`](./framework/decision-trees.md) for quick architectural decisions
-4. **Use code snippets** - Copy patterns from [`code-snippets.md`](./framework/code-snippets.md)
-5. **Follow feature template** if needed - Reference [`feature-template.md`](./framework/feature-template.md) for complex features
-6. **Document implementation** - Use [`implementation-guide.md`](./framework/implementation-guide.md) framework
-
-### Optimized LLM Workflow:
+### 📋 Implementation Priority:
 ```
-Context Optimization → Decision Tree → Code Snippet → Adapt → Implement → Document
+quick-reference.md → decision-trees.md → code-snippets.md → implement → document
 ```
 
-This approach maximizes LLM performance by providing structured, prioritized context instead of overwhelming documentation.
+### 🎯 Context Guidelines:
+- **Essential**: core/ files only (90% of use cases)
+- **As needed**: tools/ files for specific requirements
+- **Reference**: project/ for learning from existing code
 
 ## 🎯 Documentation Philosophy
 
@@ -64,10 +56,10 @@ This documentation system is designed to:
 1. Read the relevant framework documentation
 2. Follow the feature-template.md process
 3. Implement following architectural patterns
-4. Document the implementation in the implementations/ folder
+4. Document the implementation in the project/ folder
 
 ### For Understanding Existing Code
-1. Check implementations/ for what has been built
+1. Check project/ for what has been built
 2. Reference framework/ for the patterns used
 3. Look at adrs/ for architectural decisions made
 
@@ -75,5 +67,4 @@ This documentation system is designed to:
 
 - **Framework docs** change rarely (architectural patterns)
 - **Implementation docs** grow with every feature built
-- **ADRs** are added when architectural decisions are made
 - **This README** should be updated when structure changes

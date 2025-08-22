@@ -986,7 +986,6 @@ When implementing a new feature:
 5. **✅ Copy table component** - Adapt columns to your data structure
 6. **✅ Copy page component** - Wire everything together
 7. **✅ Add error boundary** - Wrap your page component
-8. **✅ Test all operations** - Create, read, update, delete
 
 ### Replacement Patterns
 - `{Resource}` → Capitalized resource name (e.g., "User", "Product")
